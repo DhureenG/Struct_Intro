@@ -1,0 +1,24 @@
+#include<iostream>
+using namespace std;
+struct dob{
+    int date;
+    int month;
+    int year;
+};
+
+struct stud{
+    string name;
+    int age;
+    int year;
+    struct dob bday;
+}s1;
+int main()
+{
+   
+    s1.name="Dhureen";
+    s1.age=18;
+    s1.year=2;
+    s1.bday.date=20;
+    cout<<s1.name<<s1.year<<s1.age<<s1.bday.date;
+    return 0;
+}
